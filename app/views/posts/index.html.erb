@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>세모귀</h1>
+  <%= link_to '새 글 쓰기', new_post_path, class: "btn" %> <br>
+  <% @posts.each do |p| %>
+    <%= p.id %>.<%= link_to "#{p.title}", post_path(p) %>
+  <% end %>
+</div>

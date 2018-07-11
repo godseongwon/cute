@@ -1,0 +1,7 @@
+<div class="container">
+  제목: <%= @post.title %><br>
+  내용: <%= @post.content %>
+
+  <%= link_to '수정', edit_post_path(@post), class: :btn %>
+  <%= link_to '삭제', post_path(@post), method: :delete, class: :btn %>
+</div>
